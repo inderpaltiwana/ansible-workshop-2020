@@ -1,0 +1,32 @@
+---
+- name: install mariadb database
+  hosts: db
+  become: true
+  tasks:
+    # may remove based on virtual machine instances
+    - name: install epel-release
+      yum:
+        name: epel-release
+      state: latest
+
+    - name: install mariadb
+      yum:
+        name:
+          - mariadb-server
+          - python3-PyMySQL
+        state: latest
+
+    - name: start mariadb
+      service:
+        name: mariadb
+        enabled: true
+        state: started
+
+    - name: mysql_root_password
+      mysql_user:
+        login_user: root
+        login_password: password
+        user: root
+        check_implicit_admin: true
+        password: password
+        host: localhost
