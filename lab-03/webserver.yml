@@ -23,8 +23,8 @@
         state: restarted
     - name: populate html webserver
       template:
-        src: /var/
-        dest: /etc/file.conf
-        owner: bin
-        group: wheel
+        src: template.j2
+        dest: /var/wwww/html/index.html
+        owner: root
+        group: root
         mode: '0644'
