@@ -1,0 +1,5 @@
+#install epel
+yum install epel-repository
+
+#different flavours of ansible to install, we will be going with a prepackaged flavour, additional methods including making from releasae branches and latest source
+yum install ansible

@@ -1,0 +1,8 @@
+#ping all servers in group all
+ansible -m ping all --private-key=~/.ssh/keys/id_rsa -u centos
+
+#ping webservers in group webservers
+ansible -m ping webservers --private-key=~/.ssh/keys/id_rsa -u centos
+
+#ping databases in group databases
+ansible -m ping db --private-key=~/.ssh/keys/id_rsa -u centos
