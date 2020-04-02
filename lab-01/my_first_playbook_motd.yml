@@ -1,5 +1,6 @@
 ---
 - name: create message of the day
+  gather_facts: true #Explain this is not needed as the default is True, it is needed for the below fact.
   hosts: all
   become: true
   tasks:
