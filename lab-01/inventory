@@ -1,8 +1,5 @@
-[control]
+[app]
 blah
 
-[webserver]
-blah
-
-[database]
+[db]
 blah
