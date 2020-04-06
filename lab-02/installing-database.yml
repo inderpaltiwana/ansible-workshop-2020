@@ -3,12 +3,6 @@
   hosts: db
   become: true
   tasks:
-    # may remove based on virtual machine instances
-    - name: install epel-release
-      yum:
-        name: epel-release
-        state: latest
-
     - name: install mariadb
       yum:
         name:
