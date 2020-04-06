@@ -12,4 +12,4 @@
         dest: /etc/profile.d/motd.sh
         owner: ansible
         group: ansible
-        mode: '761'
+        mode: '774'
