@@ -4,8 +4,8 @@
   hosts: all
   become: true
   tasks:
-    - name: edit message of the day file
-      lineinfile:
-        path: /etc/motd
-        state: present
-        line: 'This is my server on {{ ansible_default_ipv4.address }}'
+  - name: edit message of the day file
+    lineinfile:
+      path: /etc/motd
+      state: present
+      line: 'This is my server on {{ ansible_default_ipv4.address }}'
