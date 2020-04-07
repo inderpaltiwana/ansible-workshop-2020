@@ -3,13 +3,13 @@
   hosts: apps
   become: true
   tasks:
-    - name: Install happy train 
-      yum:
-        name: sl
-        state: latest
-    - name: populate motd
-      template:
-        dest: /etc/profile.d/motd.sh
-        owner: ansible
-        group: ansible
-        mode: '774'
+  - name: Install happy train 
+    yum:
+      name: sl
+      state: latest
+  - name: populate motd
+    template:
+      dest: /etc/profile.d/motd.sh
+      owner: ansible
+      group: ansible
+      mode: '774'
