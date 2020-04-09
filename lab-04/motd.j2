@@ -1,4 +1,4 @@
-{% if ansible_fqdn in groups['apps'] %}
+{% if ansible_default_ipv4.address in groups['app'] %}
 #!/bin/bash
 
 sl
