@@ -1,7 +1,7 @@
 ---
 # Ansible playbook that uses motd.j2 as message of the day
 - name: Create motd Happy Train
-  hosts: apps
+  hosts: app
   become: true
   tasks:
   - name: Install epel-release 
