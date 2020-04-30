@@ -15,6 +15,6 @@
   - name: populate motd
     template:
       dest: /etc/profile.d/motd.sh
-      owner: dave
+      owner: root
       group: root
       mode: '774'
