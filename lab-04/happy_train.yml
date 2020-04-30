@@ -14,6 +14,7 @@
       state: latest
   - name: populate motd
     template:
+      src: motd.j2
       dest: /etc/profile.d/motd.sh
       owner: root
       group: root
